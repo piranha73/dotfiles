@@ -70,12 +70,18 @@
     "ruby.lint": {
         "rubocop": true
     },
+    "search.exclude": {
+      // Inherits all glob patterns from the `files.exclude` setting.
+      "**/.venv": true
+    },
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
+    "window.newWindowDimensions": "maximized",
     "workbench.editor.enablePreview": true,
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.panel.defaultLocation": "right",
 }
