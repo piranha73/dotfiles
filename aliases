@@ -7,3 +7,7 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 alias hd="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias sd="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+change_profile() {
+ osascript -e "tell application \"Terminal\" to set current settings of window 1 to settings set \"$1\""
+}
